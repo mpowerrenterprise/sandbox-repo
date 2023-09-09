@@ -1,6 +1,0 @@
-https://github.com/gunarakulangunaretnam/real-time-voice-recognition-based-language-translation-bot
-https://github.com/gunarakulangunaretnam/face-mask-classifier
-https://github.com/gunarakulangunaretnam/face-mesh-detection-with-cvzone-python
-https://github.com/gunarakulangunaretnam/pose-detection-with-cvzone-python
-https://github.com/gunarakulangunaretnam/hand-tracker-with-cvzone-python
-https://github.com/gunarakulangunaretnam/face-detection-in-python
