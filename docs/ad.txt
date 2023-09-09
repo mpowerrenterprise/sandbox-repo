@@ -1,13 +1,13 @@
 opencv-python
 tensorflow
 keras
+keyboard
 mediapipe
 pyFirmata
 cvzone
 pyttsx3
-playsound
+pygame
 pywhatkit
-keyboard
 SpeechRecognition
 gtts 
 selenium
