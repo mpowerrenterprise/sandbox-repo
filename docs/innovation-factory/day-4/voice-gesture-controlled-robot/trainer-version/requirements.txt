@@ -1,0 +1,4 @@
+pyFirmata
+pyttsx3
+SpeechRecognition
+PyAudio
