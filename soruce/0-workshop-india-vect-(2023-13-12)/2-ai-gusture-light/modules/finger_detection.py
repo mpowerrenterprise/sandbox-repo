@@ -3,6 +3,10 @@ import mediapipe as mp
 
 mp_drawing = mp.solutions.drawing_utils
 
+# Initialize MediaPipe Hands
+mp_hands = mp.solutions.hands
+hands = mp_hands.Hands()
+
 def count_open_fingers(hand_landmarks):
     # Define the finger landmark indices
     finger_indices = [4, 8, 12, 16, 20]
@@ -17,9 +21,6 @@ def count_open_fingers(hand_landmarks):
     return open_fingers
 
 def hand_process(frame):
-    # Initialize MediaPipe Hands
-    mp_hands = mp.solutions.hands
-    hands = mp_hands.Hands()
 
     # Convert the frame to RGB
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)

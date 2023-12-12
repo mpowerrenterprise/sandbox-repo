@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-def get_dominant_color(frame, threshold=500):
+def get_color(frame, threshold=500):
     # Convert the BGR image to HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
@@ -28,13 +28,23 @@ def get_dominant_color(frame, threshold=500):
     # Determine the dominant color
     dominant_color = "Unknown"
     max_area = max(red_area, green_area, blue_area)
-    
+
+    textColor = (0,0,0)
+
+   
     if max_area > threshold:
         if max_area == red_area:
             dominant_color = "Red"
+            textColor = (0,0,255)
         elif max_area == green_area:
             dominant_color = "Green"
+            textColor = (0,255,0)
         elif max_area == blue_area:
             dominant_color = "Blue"
+            textColor = (255,0,0)
+
+    # Draw the dominant color on the frame
+    cv2.putText(frame, f"Color: {dominant_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, textColor, 2)
+    
 
     return dominant_color

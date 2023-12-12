@@ -1,5 +1,5 @@
 import cv2
-import colordetection
+import modules.color_detection as ColorDetection
 import numpy as np
 from pyfirmata import Arduino, util
 
@@ -10,39 +10,30 @@ green_pin = board.get_pin('d:12:o')   # Digital output pin 12
 blue_pin = board.get_pin('d:11:o')    # Digital output pin 11
 
 # Open the camera
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 while True:
     # Read a frame from the camera
     ret, frame = cap.read()
 
-    if not ret:
-        print("Error reading frame")
-        break
-
     # Get the dominant color in the frame
-    dominant_color = colordetection.get_dominant_color(frame)
+    color = ColorDetection.get_color(frame)
 
-    # Draw the dominant color on the frame
-    cv2.putText(frame, f"Dominant Color: {dominant_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-
-
-    if dominant_color == "Red":
+    if color == "Red":
         red_pin.write(1)
 
-    elif dominant_color == "Green":
+    elif color == "Green":
         green_pin.write(1)
 
-    elif dominant_color == "Blue":
+    elif color == "Blue":
         blue_pin.write(1)
     else:
         red_pin.write(0)
         green_pin.write(0)
         blue_pin.write(0)
 
-
     # Display the annotated frame
-    cv2.imshow('Dominant Color Detection', frame)
+    cv2.imshow('AI AutoLight', frame)
 
     # Break the loop when 'q' key is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
