@@ -1,4 +1,4 @@
-import utils
+import speechtotext
 from pyfirmata import Arduino, util
 
 board = Arduino('COM4') # Change 'COM4' to your Arduino's serial port
@@ -8,7 +8,7 @@ green_pin = board.get_pin('d:12:o')   # Digital output pin 12
 blue_pin = board.get_pin('d:11:o')    # Digital output pin 11
 
 while True:
-	text = utils.speech_to_text()
+	text = speechtotext.speech_to_text()
 
 	print(text)
 

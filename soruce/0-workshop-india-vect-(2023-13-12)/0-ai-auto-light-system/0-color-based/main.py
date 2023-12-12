@@ -1,5 +1,5 @@
 import cv2
-import utils
+import colordetection
 import numpy as np
 from pyfirmata import Arduino, util
 
@@ -21,7 +21,7 @@ while True:
         break
 
     # Get the dominant color in the frame
-    dominant_color = utils.get_dominant_color(frame)
+    dominant_color = colordetection.get_dominant_color(frame)
 
     # Draw the dominant color on the frame
     cv2.putText(frame, f"Dominant Color: {dominant_color}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
