@@ -2,7 +2,7 @@ import cv2
 from pyfirmata import Arduino, util
 import modules.finger_distancer as FingerDistancer
 
-board = Arduino('COM3') # Change 'COM4' to your Arduino's serial port
+board = Arduino('COM5') # Change 'COM4' to your Arduino's serial port
 
 pwmPin = board.get_pin('d:9:s')     # Digital output pin 13
 moterIN1 = board.get_pin('d:6:o')   # Digital output pin 12
