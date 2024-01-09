@@ -2,6 +2,8 @@
 
 ## Introduction
 
+![Violet Colorful Gradient Geometric Line And Shapes Innovation Festival Banner](https://github.com/gunarakulangunaretnam/sandbox-repo/assets/45822509/525be3e8-7016-4224-9316-3a1642a261a7)
+
 This repository is used for sharing code and deploying testing apps. It is updated dynamically, and the version history is provided below. This platform is a collaborative space for developers and testers to share, explore, and deploy code seamlessly.
 
 ## Version History
