@@ -1,4 +1,4 @@
-# SANDBOX REPO
+# Sandbox Repo
 
 ## Introduction
 
@@ -16,7 +16,7 @@ This repository is used for sharing code and deploying testing apps. It is updat
 - [HeadSet App (2023-07-18)](https://github.com/gunarakulangunaretnam/sandbox-repo/tree/3b3ddd78f719462699c800f0b7190b6c367d27c2)
 
 
-# CONTACT
+# Contact
 
 ### Website: 
 
