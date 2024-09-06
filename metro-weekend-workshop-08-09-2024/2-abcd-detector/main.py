@@ -66,7 +66,6 @@ while True:
         engine.say("D")
         engine.runAndWait()
 
-
     
     time.sleep(1)
 

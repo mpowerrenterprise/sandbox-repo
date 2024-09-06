@@ -40,7 +40,7 @@ while True:
     print("Class:", class_name[2:], end="")
     print("Confidence Score:", str(np.round(confidence_score * 100))[:-2], "%")
 
-    if class_name[2:].strip() == "without-mask":
+    if class_name[2:].strip() == "without-facemask":
         playsound.playsound("media/beep.mp3")
 
 
