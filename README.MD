@@ -9,6 +9,8 @@ This repository is used for sharing code and deploying testing apps. It is updat
 
 ## Version History
 
+- [Metro Weekend (2024-09-08)](https://github.com/gunarakulangunaretnam/sandbox-repo/tree/e3c1a2c9b2848ce2610e799b8d70f619bb601b38)
+
 - [BCAS Workshop (2024-01-30)](https://github.com/gunarakulangunaretnam/sandbox-repo/tree/183a64873879e5a662bcb237068b8905e87bfbe9)
 
 - [VECT ECE Workshop (2023-12-13)](https://github.com/gunarakulangunaretnam/sandbox-repo/tree/361b7df5e9716ef37a7780fbb9b931abb5796f7b)
